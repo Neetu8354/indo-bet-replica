@@ -6,9 +6,9 @@ import { openWhatsApp } from "@/lib/wa";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
-  { img: promoIpl, eyebrow: "IPL 2026", title: "Match-day mega bonus", sub: "Bet ₹1,000 and receive an additional ₹2,000 in bonus credits.", cta: "Claim offer" },
-  { img: promoWelcome, eyebrow: "New players", title: "200% welcome bonus", sub: "Up to ₹15,000 matched on your first deposit. T&Cs apply.", cta: "Get bonus" },
-  { img: promoCasino, eyebrow: "Live casino", title: "VIP table access", sub: "Teen Patti, Andar Bahar and Roulette with dedicated dealers.", cta: "Play live" },
+  { img: promoIpl, alt: "IPL 2026 cricket betting bonus on yolo365bookmaker.live — match-day mega offer", eyebrow: "IPL 2026", title: "Match-day mega bonus", sub: "Bet ₹1,000 and receive an additional ₹2,000 in bonus credits.", cta: "Claim offer" },
+  { img: promoWelcome, alt: "200% welcome bonus for new players on yolo365bookmaker.live cricket betting site", eyebrow: "New players", title: "200% welcome bonus", sub: "Up to ₹15,000 matched on your first deposit. T&Cs apply.", cta: "Get bonus" },
+  { img: promoCasino, alt: "VIP live casino tables — Teen Patti, Andar Bahar, Roulette on yolo365bookmaker.live", eyebrow: "Live casino", title: "VIP table access", sub: "Teen Patti, Andar Bahar and Roulette with dedicated dealers.", cta: "Play live" },
 ];
 
 const PromoSlider = () => {
@@ -30,7 +30,7 @@ const PromoSlider = () => {
         <div className="relative aspect-[21/9] md:aspect-[24/8]">
           {slides.map((s, idx) => (
             <div key={idx} className={`absolute inset-0 transition-opacity duration-700 ${i === idx ? "opacity-100" : "opacity-0"}`}>
-              <img src={s.img} alt={s.title} className="w-full h-full object-cover" loading="lazy" />
+              <img src={s.img} alt={s.alt} className="w-full h-full object-cover" loading="lazy" decoding="async" width={1920} height={720} />
               <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/50 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 max-w-xl">
                 <div className="eyebrow mb-2">{s.eyebrow}</div>

@@ -163,7 +163,7 @@ const BlogPost = () => {
           </header>
 
           <figure className="rounded-lg overflow-hidden border hairline mb-10">
-            <img src={post.cover} alt={post.title} className="w-full h-auto" width={1200} height={675} />
+            <img src={post.cover} alt={`${post.title} — yolo365bookmaker.live blog cover`} className="w-full h-auto" width={1200} height={675} loading="eager" decoding="async" />
           </figure>
 
           <div className="text-base">{renderContent(post.content)}</div>
@@ -198,7 +198,7 @@ const BlogPost = () => {
               {relatedShown.map((r) => (
                 <Link key={r.slug} to={`/blog/${r.slug}`} className="group block">
                   <div className="aspect-[16/9] overflow-hidden rounded-md border hairline mb-3">
-                    <img src={r.cover} alt={r.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={r.cover} alt={`${r.title} — related YOLO365 cricket betting blog post`} loading="lazy" decoding="async" width={400} height={225} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="text-[10px] text-gold uppercase tracking-wider mb-1">{r.category}</div>
                   <h3 className="text-sm font-semibold leading-snug group-hover:text-gold transition-colors">{r.title}</h3>
