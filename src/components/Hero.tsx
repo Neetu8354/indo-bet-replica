@@ -1,11 +1,11 @@
 import heroImg from "@/assets/hero-cricket.jpg";
 import { openWhatsApp } from "@/lib/wa";
-import { MessageCircle, Zap } from "lucide-react";
+import { MessageCircle, ArrowRight, ShieldCheck } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="relative h-[80vh] min-h-[560px] max-h-[820px]">
+    <section className="relative overflow-hidden border-b hairline">
+      <div className="relative h-[78vh] min-h-[540px] max-h-[780px]">
         <img
           src={heroImg}
           alt="Live cricket betting on Yolo365 — IPL, T20, ODI"
@@ -14,40 +14,54 @@ const Hero = () => {
           height={900}
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
 
         <div className="container relative z-10 h-full flex flex-col justify-center max-w-3xl">
-          <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-secondary/90 text-secondary-foreground text-xs font-bold mb-5 animate-pulse-gold">
-            <span className="w-2 h-2 rounded-full bg-white animate-pulse" /> LIVE NOW · IPL 2026
+          <div className="inline-flex items-center gap-2 self-start px-2.5 py-1 rounded-full border hairline bg-background/60 backdrop-blur text-[11px] font-medium text-foreground/80 mb-5">
+            <span className="relative flex w-1.5 h-1.5">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75 animate-ping" />
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-secondary" />
+            </span>
+            Live · IPL 2026 Season
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-5">
-            India's #1 <span className="text-gold">Cricket Betting</span> ID
+
+          <h1 className="text-4xl md:text-6xl lg:text-[68px] font-semibold leading-[1.04] mb-5 tracking-tight">
+            India's most trusted<br />
+            <span className="text-gold font-semibold">cricket betting</span> exchange
           </h1>
-          <p className="text-base md:text-xl text-muted-foreground mb-8 max-w-xl">
-            Bet on every IPL match, international cricket, kabaddi & live casino. Instant ₹ deposits, lightning-fast withdrawals — all on WhatsApp.
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed">
+            Bet on every IPL match, international cricket, kabaddi and live casino. Instant INR deposits and 5-minute withdrawals — managed entirely on WhatsApp.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button onClick={openWhatsApp} className="inline-flex items-center gap-2 h-14 px-7 rounded-xl bg-gold text-primary-foreground font-bold text-base btn-glow hover:scale-105 transition-transform">
-              <MessageCircle className="w-5 h-5" /> Get ID on WhatsApp
+            <button onClick={openWhatsApp} className="inline-flex items-center gap-2 h-12 px-6 rounded-md bg-gold text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity">
+              <MessageCircle className="w-4 h-4" /> Get your ID on WhatsApp
             </button>
-            <button onClick={openWhatsApp} className="inline-flex items-center gap-2 h-14 px-7 rounded-xl border-2 border-gold/50 text-gold font-bold text-base hover:bg-gold/10 transition-colors">
-              <Zap className="w-5 h-5" /> Claim ₹15,000 Bonus
+            <button onClick={openWhatsApp} className="inline-flex items-center gap-2 h-12 px-6 rounded-md border hairline text-foreground hover:border-gold/50 hover:text-gold font-medium text-sm transition-colors">
+              View promotions <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-6 text-sm">
-            {[
-              ["1M+", "Active Players"],
-              ["₹100Cr+", "Paid Out"],
-              ["24/7", "Support"],
-              ["60s", "Instant ID"],
-            ].map(([n, l]) => (
-              <div key={l}>
-                <div className="text-2xl md:text-3xl font-black text-gold">{n}</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">{l}</div>
-              </div>
-            ))}
+          <div className="mt-10 inline-flex items-center gap-2 text-xs text-muted-foreground self-start">
+            <ShieldCheck className="w-4 h-4 text-gold" />
+            Licensed · Encrypted · Trusted by 1M+ Indian players
           </div>
+        </div>
+      </div>
+
+      {/* Stats strip */}
+      <div className="border-t hairline bg-card/40">
+        <div className="container grid grid-cols-2 md:grid-cols-4 divide-x hairline">
+          {[
+            ["1M+", "Active players"],
+            ["₹100Cr+", "Paid out in 2025"],
+            ["24/7", "WhatsApp support"],
+            ["60s", "ID activation"],
+          ].map(([n, l]) => (
+            <div key={l} className="py-5 px-4 text-center md:text-left">
+              <div className="text-xl md:text-2xl font-semibold text-foreground tracking-tight">{n}</div>
+              <div className="text-[11px] text-muted-foreground uppercase tracking-wider mt-0.5">{l}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

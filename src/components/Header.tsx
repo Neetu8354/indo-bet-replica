@@ -1,48 +1,55 @@
 import { openWhatsApp } from "@/lib/wa";
-import { MessageCircle, Menu, X, User } from "lucide-react";
+import { MessageCircle, Menu, X, User, Search } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const nav = ["Sports", "Cricket", "Live Casino", "Slots", "Promotions", "Support"];
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-gold/20">
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <button onClick={openWhatsApp} className="flex items-center gap-2" aria-label="Yolo365 home">
-          <div className="w-10 h-10 rounded-lg bg-gold flex items-center justify-center font-black text-xl text-primary-foreground btn-glow">
+    <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/90 border-b hairline">
+      <div className="container flex items-center justify-between h-16">
+        <button onClick={openWhatsApp} className="flex items-center gap-2.5" aria-label="Yolo365 home">
+          <div className="w-9 h-9 rounded-md bg-gold flex items-center justify-center font-bold text-lg text-primary-foreground">
             Y
           </div>
           <div className="leading-none">
-            <div className="text-2xl font-black text-gold tracking-tight">YOLO365</div>
-            <div className="text-[10px] text-muted-foreground tracking-[0.2em]">BOOKMAKER</div>
+            <div className="text-lg font-semibold text-foreground tracking-tight">YOLO<span className="text-gold">365</span></div>
+            <div className="text-[9px] text-muted-foreground tracking-[0.22em] mt-0.5">BOOKMAKER</div>
           </div>
         </button>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (
-            <button key={n} onClick={openWhatsApp} className="text-sm font-medium hover:text-gold transition-colors">
+            <button
+              key={n}
+              onClick={openWhatsApp}
+              className="px-3 py-2 text-sm font-medium text-foreground/75 hover:text-gold transition-colors"
+            >
               {n}
             </button>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
-          <button onClick={openWhatsApp} className="hidden md:inline-flex items-center gap-2 px-4 h-10 rounded-lg border border-gold/40 text-gold hover:bg-gold/10 text-sm font-semibold transition-colors">
+          <button onClick={openWhatsApp} className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-md text-foreground/60 hover:text-gold transition-colors" aria-label="Search">
+            <Search className="w-4 h-4" />
+          </button>
+          <button onClick={openWhatsApp} className="hidden md:inline-flex items-center gap-2 px-4 h-9 rounded-md border hairline text-foreground/85 hover:text-gold hover:border-gold/40 text-sm font-medium transition-colors">
             <User className="w-4 h-4" /> Login
           </button>
-          <button onClick={openWhatsApp} className="inline-flex items-center gap-2 px-4 md:px-5 h-10 rounded-lg bg-gold text-primary-foreground font-bold text-sm btn-glow hover:scale-105 transition-transform">
+          <button onClick={openWhatsApp} className="inline-flex items-center gap-2 px-4 h-9 rounded-md bg-gold text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity">
             <MessageCircle className="w-4 h-4" /> Get ID
           </button>
-          <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-gold">
-            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-foreground/80">
+            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
       {open && (
-        <div className="lg:hidden border-t border-gold/20 bg-background">
-          <div className="container py-4 flex flex-col gap-1">
+        <div className="lg:hidden border-t hairline bg-background">
+          <div className="container py-3 flex flex-col">
             {nav.map((n) => (
-              <button key={n} onClick={openWhatsApp} className="text-left py-3 px-2 rounded hover:bg-muted text-sm font-medium">
+              <button key={n} onClick={openWhatsApp} className="text-left py-2.5 text-sm font-medium text-foreground/80 hover:text-gold">
                 {n}
               </button>
             ))}

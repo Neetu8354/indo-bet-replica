@@ -3,13 +3,14 @@ import { MessageCircle } from "lucide-react";
 
 const CTABanner = () => (
   <section className="container py-16">
-    <div className="relative rounded-3xl overflow-hidden p-8 md:p-16 text-center" style={{ background: "var(--gradient-crimson)" }}>
-      <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(circle at 50% 50%, hsl(var(--gold) / 0.4), transparent 60%)" }} />
-      <div className="relative">
-        <h2 className="text-3xl md:text-6xl font-black mb-4 text-foreground">Ready to <span className="text-gold">Win Big?</span></h2>
-        <p className="text-base md:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">Join 1 million+ Indians betting on IPL, cricket & casino. Get your free ID on WhatsApp now.</p>
-        <button onClick={openWhatsApp} className="inline-flex items-center gap-3 px-8 md:px-10 h-14 md:h-16 rounded-xl bg-gold text-primary-foreground font-black text-base md:text-xl btn-glow hover:scale-105 transition-transform">
-          <MessageCircle className="w-6 h-6" /> Get FREE ID on WhatsApp
+    <div className="relative rounded-lg overflow-hidden border hairline bg-card/40 p-10 md:p-16 text-center">
+      <div className="absolute inset-0 opacity-[0.08]" style={{ background: "radial-gradient(circle at 50% 0%, hsl(var(--gold)) 0%, transparent 60%)" }} />
+      <div className="relative max-w-2xl mx-auto">
+        <div className="eyebrow mb-3">Ready when you are</div>
+        <h2 className="text-2xl md:text-4xl font-semibold tracking-tight mb-4">Open your <span className="text-gold">Yolo365</span> account today</h2>
+        <p className="text-sm md:text-base text-muted-foreground mb-8">Join over a million Indian players betting on IPL, cricket and live casino. Free ID on WhatsApp in under 60 seconds.</p>
+        <button onClick={openWhatsApp} className="inline-flex items-center gap-2 px-6 h-12 rounded-md bg-gold text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity">
+          <MessageCircle className="w-4 h-4" /> Get free ID on WhatsApp
         </button>
       </div>
     </div>

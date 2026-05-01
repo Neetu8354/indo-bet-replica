@@ -2,33 +2,33 @@ import { openWhatsApp } from "@/lib/wa";
 import { MessageCircle } from "lucide-react";
 
 const steps = [
-  { n: "1", t: "Click Get ID", d: "Tap any 'Get ID' button — opens WhatsApp instantly." },
-  { n: "2", t: "Send 'Hi'", d: "Our team replies in under 60 seconds with your ID & password." },
-  { n: "3", t: "Deposit ₹", d: "Add money via UPI, PhonePe, GPay or any Indian payment method." },
-  { n: "4", t: "Bet & Win", d: "Place your bets on cricket, casino & more. Withdraw anytime." },
+  { n: "01", t: "Request your ID", d: "Tap any 'Get ID' button to open WhatsApp instantly." },
+  { n: "02", t: "Verify on chat", d: "Our team replies in under 60 seconds with credentials." },
+  { n: "03", t: "Deposit in INR", d: "Add funds via UPI, PhonePe, GPay or any Indian payment method." },
+  { n: "04", t: "Bet & withdraw", d: "Place bets across cricket and casino. Withdraw any time." },
 ];
 
 const HowItWorks = () => (
-  <section className="container py-16">
-    <div className="text-center mb-10">
-      <div className="text-xs text-gold tracking-[0.3em] mb-2">GET STARTED</div>
-      <h2 className="text-3xl md:text-5xl font-black mb-3">Get Your ID in <span className="text-gold">60 Seconds</span></h2>
-    </div>
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      {steps.map((s) => (
-        <div key={s.n} className="card-premium rounded-2xl p-6 relative">
-          <div className="absolute -top-4 -left-2 text-7xl font-black text-gold/20 leading-none">{s.n}</div>
-          <div className="relative">
-            <h3 className="font-bold text-lg mb-2">{s.t}</h3>
-            <p className="text-sm text-muted-foreground">{s.d}</p>
+  <section className="border-y hairline bg-card/30">
+    <div className="container py-16">
+      <div className="text-center mb-10 max-w-2xl mx-auto">
+        <div className="eyebrow mb-2">Get started</div>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Your account, ready in 60 seconds</h2>
+      </div>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {steps.map((s) => (
+          <div key={s.n} className="card-premium rounded-lg p-6">
+            <div className="text-xs font-medium text-gold tracking-widest mb-3">{s.n}</div>
+            <h3 className="font-semibold text-base mb-1.5 tracking-tight">{s.t}</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
           </div>
-        </div>
-      ))}
-    </div>
-    <div className="text-center mt-10">
-      <button onClick={openWhatsApp} className="inline-flex items-center gap-2 px-8 h-14 rounded-xl bg-gold text-primary-foreground font-bold btn-glow hover:scale-105 transition-transform text-lg">
-        <MessageCircle className="w-5 h-5" /> Start on WhatsApp
-      </button>
+        ))}
+      </div>
+      <div className="text-center mt-10">
+        <button onClick={openWhatsApp} className="inline-flex items-center gap-2 px-6 h-11 rounded-md bg-gold text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity">
+          <MessageCircle className="w-4 h-4" /> Start on WhatsApp
+        </button>
+      </div>
     </div>
   </section>
 );

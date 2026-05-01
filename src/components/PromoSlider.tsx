@@ -6,44 +6,52 @@ import { openWhatsApp } from "@/lib/wa";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
-  { img: promoIpl, title: "IPL 2026 Mega Bonus", sub: "Bet ₹1000 → Get ₹2000 Free", cta: "Claim Now" },
-  { img: promoWelcome, title: "Welcome Bonus 200%", sub: "Up to ₹15,000 on First Deposit", cta: "Get Bonus" },
-  { img: promoCasino, title: "Live Casino VIP", sub: "Teen Patti · Andar Bahar · Roulette", cta: "Play Live" },
+  { img: promoIpl, eyebrow: "IPL 2026", title: "Match-day mega bonus", sub: "Bet ₹1,000 and receive an additional ₹2,000 in bonus credits.", cta: "Claim offer" },
+  { img: promoWelcome, eyebrow: "New players", title: "200% welcome bonus", sub: "Up to ₹15,000 matched on your first deposit. T&Cs apply.", cta: "Get bonus" },
+  { img: promoCasino, eyebrow: "Live casino", title: "VIP table access", sub: "Teen Patti, Andar Bahar and Roulette with dedicated dealers.", cta: "Play live" },
 ];
 
 const PromoSlider = () => {
   const [i, setI] = useState(0);
   useEffect(() => {
-    const t = setInterval(() => setI((p) => (p + 1) % slides.length), 5000);
+    const t = setInterval(() => setI((p) => (p + 1) % slides.length), 6000);
     return () => clearInterval(t);
   }, []);
   return (
     <section className="container py-10">
-      <div className="relative rounded-2xl overflow-hidden card-premium">
+      <div className="flex items-end justify-between mb-4">
+        <div>
+          <div className="eyebrow mb-1">Featured</div>
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight">Current promotions</h2>
+        </div>
+        <button onClick={openWhatsApp} className="hidden md:inline-flex text-sm text-foreground/70 hover:text-gold transition-colors">View all →</button>
+      </div>
+      <div className="relative rounded-lg overflow-hidden border hairline">
         <div className="relative aspect-[21/9] md:aspect-[24/8]">
           {slides.map((s, idx) => (
             <div key={idx} className={`absolute inset-0 transition-opacity duration-700 ${i === idx ? "opacity-100" : "opacity-0"}`}>
               <img src={s.img} alt={s.title} className="w-full h-full object-cover" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/50 to-transparent" />
               <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12 max-w-xl">
-                <h3 className="text-2xl md:text-5xl font-black text-gold mb-2 md:mb-4">{s.title}</h3>
-                <p className="text-sm md:text-xl text-foreground/90 mb-4 md:mb-6">{s.sub}</p>
-                <button onClick={openWhatsApp} className="self-start px-6 md:px-8 h-11 md:h-12 rounded-lg bg-gold text-primary-foreground font-bold btn-glow hover:scale-105 transition-transform text-sm md:text-base">
+                <div className="eyebrow mb-2">{s.eyebrow}</div>
+                <h3 className="text-2xl md:text-4xl font-semibold tracking-tight mb-3">{s.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-5 max-w-md">{s.sub}</p>
+                <button onClick={openWhatsApp} className="self-start px-5 h-10 rounded-md bg-gold text-primary-foreground font-semibold hover:opacity-90 transition-opacity text-sm">
                   {s.cta}
                 </button>
               </div>
             </div>
           ))}
         </div>
-        <button onClick={() => setI((i - 1 + slides.length) % slides.length)} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors">
-          <ChevronLeft className="w-5 h-5" />
+        <button onClick={() => setI((i - 1 + slides.length) % slides.length)} className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-background/70 border hairline flex items-center justify-center text-foreground/80 hover:text-gold backdrop-blur transition-colors">
+          <ChevronLeft className="w-4 h-4" />
         </button>
-        <button onClick={() => setI((i + 1) % slides.length)} className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background/80 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-colors">
-          <ChevronRight className="w-5 h-5" />
+        <button onClick={() => setI((i + 1) % slides.length)} className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-background/70 border hairline flex items-center justify-center text-foreground/80 hover:text-gold backdrop-blur transition-colors">
+          <ChevronRight className="w-4 h-4" />
         </button>
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
           {slides.map((_, idx) => (
-            <button key={idx} onClick={() => setI(idx)} className={`h-1.5 rounded-full transition-all ${i === idx ? "w-8 bg-gold" : "w-2 bg-foreground/30"}`} aria-label={`Slide ${idx + 1}`} />
+            <button key={idx} onClick={() => setI(idx)} className={`h-1 rounded-full transition-all ${i === idx ? "w-6 bg-gold" : "w-1.5 bg-foreground/30"}`} aria-label={`Slide ${idx + 1}`} />
           ))}
         </div>
       </div>

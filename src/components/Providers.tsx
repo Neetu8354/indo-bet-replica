@@ -3,14 +3,14 @@ import { openWhatsApp } from "@/lib/wa";
 const providers = ["EVOLUTION", "PRAGMATIC", "EZUGI", "SUPERSPADE", "BETGAMES", "PLAYTECH", "MICROGAMING", "NETENT", "RED TIGER", "HOTROAD"];
 
 const Providers = () => (
-  <section className="py-12 border-y border-gold/10 bg-card/30 overflow-hidden">
-    <div className="container mb-6 text-center">
-      <div className="text-xs text-gold tracking-[0.3em]">TRUSTED GAME PROVIDERS</div>
+  <section className="py-10 border-y hairline bg-card/40 overflow-hidden">
+    <div className="container mb-5 text-center">
+      <div className="eyebrow">Trusted game providers</div>
     </div>
     <div className="relative">
-      <div className="flex gap-12 marquee whitespace-nowrap">
+      <div className="flex gap-14 marquee whitespace-nowrap">
         {[...providers, ...providers].map((p, i) => (
-          <button key={i} onClick={openWhatsApp} className="text-2xl md:text-3xl font-black text-muted-foreground/50 hover:text-gold transition-colors tracking-widest">
+          <button key={i} onClick={openWhatsApp} className="text-sm md:text-base font-semibold text-muted-foreground/60 hover:text-gold transition-colors tracking-[0.2em]">
             {p}
           </button>
         ))}
