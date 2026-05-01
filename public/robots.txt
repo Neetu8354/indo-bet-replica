@@ -1,7 +1,25 @@
+# YOLO365 — robots.txt
+# https://yolo365bookmaker.live
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
 User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
 Allow: /
 
 User-agent: Twitterbot
@@ -10,5 +28,45 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# AI / LLM crawlers — allowed for AEO citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://yolo365bookmaker.live/sitemap.xml
+Host: https://yolo365bookmaker.live
