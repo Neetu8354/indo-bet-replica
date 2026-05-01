@@ -17,16 +17,14 @@ export type BlogPost = {
   faqs: { q: string; a: string }[];
 };
 
-const cricketImg = "/src/assets/sport-cricket.jpg";
-const heroImg = "/src/assets/hero-cricket.jpg";
-const teenpattiImg = "/src/assets/casino-teenpatti.jpg";
-const abImg = "/src/assets/casino-andarbahar.jpg";
-const rouletteImg = "/src/assets/casino-roulette.jpg";
-const dtImg = "/src/assets/casino-dragontiger.jpg";
-const slotsImg = "/src/assets/casino-slots.jpg";
-const blackjackImg = "/src/assets/casino-blackjack.jpg";
-const kabaddiImg = "/src/assets/sport-kabaddi.jpg";
-const tennisImg = "/src/assets/sport-tennis.jpg";
+import cricketImg from "@/assets/sport-cricket.jpg";
+import heroImg from "@/assets/hero-cricket.jpg";
+import teenpattiImg from "@/assets/casino-teenpatti.jpg";
+import abImg from "@/assets/casino-andarbahar.jpg";
+import rouletteImg from "@/assets/casino-roulette.jpg";
+import dtImg from "@/assets/casino-dragontiger.jpg";
+import blackjackImg from "@/assets/casino-blackjack.jpg";
+import kabaddiImg from "@/assets/sport-kabaddi.jpg";
 
 export const posts: BlogPost[] = [
   {
