@@ -6,28 +6,28 @@ import { posts } from "@/blog/posts";
 const Footer = () => {
   const cols: Record<string, { label: string; href?: string }[]> = {
     "Sports": [
-      { label: "Cricket Betting" },
-      { label: "IPL 2026 Betting" },
-      { label: "Pro Kabaddi" },
+      { label: "Cricket Betting", href: "/games/cricket-betting" },
+      { label: "IPL 2026 Betting", href: "/blog/ipl-2026-betting-tips-yolo365" },
+      { label: "Pro Kabaddi", href: "/blog/kabaddi-betting-yolo365-pro-kabaddi-league" },
       { label: "Tennis" },
       { label: "Horse Racing" },
       { label: "Esports" },
     ],
     "Casino": [
-      { label: "Teen Patti" },
-      { label: "Andar Bahar" },
-      { label: "Live Roulette" },
-      { label: "Blackjack" },
-      { label: "Dragon Tiger" },
+      { label: "Teen Patti", href: "/games/teen-patti" },
+      { label: "Andar Bahar", href: "/games/andar-bahar" },
+      { label: "Aviator", href: "/games/aviator" },
+      { label: "Live Roulette", href: "/blog/online-roulette-india-strategy" },
+      { label: "Dragon Tiger", href: "/blog/dragon-tiger-live-casino-india" },
       { label: "Slots" },
     ],
-    "Resources": [
+    "Company": [
+      { label: "About Us", href: "/about" },
+      { label: "Contact", href: "/contact" },
       { label: "Blog", href: "/blog" },
       { label: "IPL Betting Tips", href: "/blog/ipl-2026-betting-tips-yolo365" },
       { label: "Get ID Guide", href: "/blog/how-to-get-yolo365-cricket-betting-id-whatsapp" },
       { label: "UPI Deposit Guide", href: "/blog/upi-deposit-betting-india-guide" },
-      { label: "Bankroll Strategy", href: "/blog/cricket-betting-bankroll-management-india" },
-      { label: "Live Casino Guide", href: "/blog/live-casino-india-evolution-ezugi-yolo365" },
     ],
   };
 
@@ -87,7 +87,9 @@ const Footer = () => {
 
         <div className="pt-8 mt-8 border-t hairline flex flex-col md:flex-row justify-between gap-4 items-center">
           <div className="text-xs text-muted-foreground">© 2026 YOLO365. All rights reserved. Play responsibly. 18+ only.</div>
-          <div className="flex gap-6 text-xs text-muted-foreground">
+          <div className="flex gap-6 text-xs text-muted-foreground flex-wrap justify-center">
+            <Link to="/about" className="hover:text-gold transition-colors">About</Link>
+            <Link to="/contact" className="hover:text-gold transition-colors">Contact</Link>
             <Link to="/blog" className="hover:text-gold transition-colors">Blog</Link>
             <button onClick={openWhatsApp} className="hover:text-gold transition-colors">Terms</button>
             <button onClick={openWhatsApp} className="hover:text-gold transition-colors">Privacy</button>
