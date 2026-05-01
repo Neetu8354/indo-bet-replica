@@ -7,12 +7,12 @@ import basketball from "@/assets/sport-basketball.jpg";
 import { openWhatsApp } from "@/lib/wa";
 
 const sports = [
-  { img: cricket, name: "Cricket", tag: "IPL 2026 · International", live: 42 },
-  { img: kabaddi, name: "Kabaddi", tag: "Pro Kabaddi League", live: 8 },
-  { img: tennis, name: "Tennis", tag: "ATP · WTA · Grand Slam", live: 15 },
-  { img: horse, name: "Horse Racing", tag: "Indian Derby", live: 12 },
-  { img: esports, name: "Esports", tag: "BGMI · Valorant · CS2", live: 24 },
-  { img: basketball, name: "Basketball", tag: "NBA · Indian League", live: 9 },
+  { img: cricket, name: "Cricket", alt: "Bet on live cricket — IPL 2026 and international matches on yolo365bookmaker.live", tag: "IPL 2026 · International", live: 42 },
+  { img: kabaddi, name: "Kabaddi", alt: "Pro Kabaddi League online betting on yolo365bookmaker.live", tag: "Pro Kabaddi League", live: 8 },
+  { img: tennis, name: "Tennis", alt: "Live tennis betting — ATP, WTA and Grand Slam odds on yolo365bookmaker.live", tag: "ATP · WTA · Grand Slam", live: 15 },
+  { img: horse, name: "Horse Racing", alt: "Indian Derby horse racing online betting on yolo365bookmaker.live", tag: "Indian Derby", live: 12 },
+  { img: esports, name: "Esports", alt: "Esports betting — BGMI, Valorant, CS2 live odds on yolo365bookmaker.live", tag: "BGMI · Valorant · CS2", live: 24 },
+  { img: basketball, name: "Basketball", alt: "NBA and Indian basketball league online betting on yolo365bookmaker.live", tag: "NBA · Indian League", live: 9 },
 ];
 
 const SportsSection = () => (
@@ -29,7 +29,7 @@ const SportsSection = () => (
       {sports.map((s) => (
         <button key={s.name} onClick={openWhatsApp} className="card-premium rounded-lg overflow-hidden text-left group">
           <div className="aspect-square overflow-hidden relative">
-            <img src={s.img} alt={s.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <img src={s.img} alt={s.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width={400} height={400} />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <div className="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-background/80 backdrop-blur border hairline text-[10px] font-medium text-foreground/90 flex items-center gap-1">
               <span className="w-1 h-1 rounded-full bg-secondary" /> {s.live} live
