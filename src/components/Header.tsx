@@ -12,10 +12,7 @@ const Header = () => {
           <div className="w-8 h-8 rounded-md bg-gold flex items-center justify-center font-bold text-base text-primary-foreground">
             Y
           </div>
-          <div className="leading-none">
-            <div className="text-base font-semibold text-foreground tracking-tight">YOLO<span className="text-gold">365</span></div>
-            <div className="text-[8px] text-muted-foreground tracking-[0.22em] mt-0.5">BOOK</div>
-          </div>
+          <div className="text-base font-semibold text-foreground tracking-tight leading-none">YOLO<span className="text-gold">365</span></div>
         </button>
 
         <nav className="hidden lg:flex items-center gap-1">
