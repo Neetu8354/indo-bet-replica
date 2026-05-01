@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const nav: { label: string; href?: string }[] = [
-    { label: "Sports" },
-    { label: "Cricket" },
-    { label: "Live Casino" },
-    { label: "Slots" },
-    { label: "Promotions" },
+    { label: "Cricket", href: "/games/cricket-betting" },
+    { label: "Teen Patti", href: "/games/teen-patti" },
+    { label: "Aviator", href: "/games/aviator" },
+    { label: "Andar Bahar", href: "/games/andar-bahar" },
     { label: "Blog", href: "/blog" },
-    { label: "Support" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/90 border-b hairline">
