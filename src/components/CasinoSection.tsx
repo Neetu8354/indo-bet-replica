@@ -16,13 +16,14 @@ const games = [
 ];
 
 const CasinoSection = () => (
-  <section className="border-y hairline bg-card/30">
-    <div className="container py-16">
-      <div className="flex items-end justify-between mb-8">
-        <div>
-          <div className="eyebrow mb-2">Live casino</div>
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Authentic Indian casino experience</h2>
-          <p className="text-sm text-muted-foreground mt-2 max-w-xl">Real dealers and real cash on Teen Patti, Andar Bahar, Roulette and more.</p>
+  <section className="border-y hairline bg-card/30 relative overflow-hidden">
+    <div className="absolute inset-0 bg-aurora opacity-50 pointer-events-none" />
+    <div className="container py-20 relative">
+      <div className="flex items-end justify-between mb-10">
+        <div className="max-w-2xl">
+          <div className="eyebrow-emerald mb-3">The live floor</div>
+          <h2 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.02]">A casino with <span className="italic text-gold">soul</span>.</h2>
+          <p className="text-base md:text-lg text-foreground/70 mt-4 font-light leading-relaxed">Real dealers, real cards, real rupees. Teen Patti and Andar Bahar streamed from India's most cinematic studios.</p>
         </div>
         <button onClick={openWhatsApp} className="hidden md:inline-flex text-sm text-foreground/70 hover:text-gold transition-colors">All games →</button>
       </div>
