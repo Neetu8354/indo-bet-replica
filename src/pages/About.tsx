@@ -52,15 +52,15 @@ const About = () => {
           <a href="/" className="hover:text-gold">Home</a> <span className="mx-2">/</span> <span className="text-foreground/80">About</span>
         </nav>
 
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">About <span className="text-gold">YOLO365</span></h1>
-        <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed mb-12">
-          YOLO365 is India's most trusted online cricket betting exchange and live casino platform. Since 2021, we've helped over 5 lakh Indian players get a verified cricket betting ID on WhatsApp in under 60 seconds — with instant UPI deposits, 5-minute withdrawals, and 24×7 Hindi support.
+        <h1 className="font-display text-5xl md:text-7xl tracking-tight mb-7">A different kind of <span className="italic text-gold">betting house</span>.</h1>
+        <p className="text-lg md:text-xl text-foreground/75 max-w-3xl leading-relaxed mb-14 font-light">
+          YOLO365 was built for Indian players who'd outgrown the noise of mass-market exchanges. Since 2021, over five lakh discerning bettors have come to us for sharper odds, a quieter interface, and the kind of personal service that treats every account like a private membership.
         </p>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
-          <p className="text-foreground/80 leading-relaxed max-w-3xl">
-            To make online cricket betting in India safe, fast, and fair. We built YOLO365 because Indian punters deserved a platform that speaks their language — Hindi support, INR-native UPI, and a WhatsApp-first experience that doesn't force you through endless KYC forms before placing your first bet on IPL or BBL.
+          <h2 className="font-display text-3xl md:text-4xl tracking-tight mb-5">Our mission</h2>
+          <p className="text-foreground/80 leading-relaxed max-w-3xl text-lg font-light">
+            We believe cricket betting in India deserves better than clunky apps and call-centre support. So we built a platform that speaks your language — Hindi-first WhatsApp service, INR-native UPI, no endless KYC paperwork. Just one message, sixty seconds, and you're on the field for IPL, BBL, or any market that moves you.
           </p>
         </section>
 

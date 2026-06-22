@@ -10,10 +10,10 @@ const steps = [
 
 const HowItWorks = () => (
   <section className="border-y hairline bg-card/30">
-    <div className="container py-16">
-      <div className="text-center mb-10 max-w-2xl mx-auto">
-        <div className="eyebrow mb-2">Get started</div>
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Your account, ready in 60 seconds</h2>
+    <div className="container py-20">
+      <div className="text-center mb-12 max-w-2xl mx-auto">
+        <div className="eyebrow mb-3">Onboarding</div>
+        <h2 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.02]">Sixty seconds to the <span className="italic text-gold">first bet</span>.</h2>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {steps.map((s) => (

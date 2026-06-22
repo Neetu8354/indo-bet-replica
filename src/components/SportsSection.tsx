@@ -16,12 +16,12 @@ const sports = [
 ];
 
 const SportsSection = () => (
-  <section className="container py-16">
-    <div className="flex items-end justify-between mb-8">
-      <div>
-        <div className="eyebrow mb-2">Sports betting</div>
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Markets across every major sport</h2>
-        <p className="text-sm text-muted-foreground mt-2 max-w-xl">Industry-leading odds in INR on cricket, kabaddi, tennis, esports and more.</p>
+  <section className="container py-20">
+    <div className="flex items-end justify-between mb-10">
+      <div className="max-w-2xl">
+        <div className="eyebrow mb-3">The sportsbook</div>
+        <h2 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.02]">Every match that <span className="italic text-gold">matters</span>.</h2>
+        <p className="text-base md:text-lg text-foreground/70 mt-4 font-light leading-relaxed">Sharper INR pricing across cricket, kabaddi, tennis and esports — backed by the deepest market coverage in India.</p>
       </div>
       <button onClick={openWhatsApp} className="hidden md:inline-flex text-sm text-foreground/70 hover:text-gold transition-colors">All sports →</button>
     </div>

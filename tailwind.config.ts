@@ -53,6 +53,7 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         gold: { DEFAULT: "hsl(var(--gold))", glow: "hsl(var(--gold-glow))", deep: "hsl(var(--gold-deep))" },
+        emerald: { DEFAULT: "hsl(var(--emerald))", deep: "hsl(var(--emerald-deep))" },
         crimson: { DEFAULT: "hsl(var(--crimson))", deep: "hsl(var(--crimson-deep))" },
         whatsapp: "hsl(var(--whatsapp))",
         sidebar: {
