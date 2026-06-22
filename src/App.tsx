@@ -12,6 +12,7 @@ const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
 const Contact = lazy(() => import("./pages/Contact.tsx"));
 const Cricket = lazy(() => import("./pages/games/Cricket.tsx"));
+const CricketId = lazy(() => import("./pages/CricketId.tsx"));
 const TeenPatti = lazy(() => import("./pages/games/TeenPatti.tsx"));
 const Aviator = lazy(() => import("./pages/games/Aviator.tsx"));
 const AndarBahar = lazy(() => import("./pages/games/AndarBahar.tsx"));
@@ -33,6 +34,7 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/cricket-id" element={<CricketId />} />
               <Route path="/games/cricket-betting" element={<Cricket />} />
               <Route path="/games/teen-patti" element={<TeenPatti />} />
               <Route path="/games/aviator" element={<Aviator />} />
