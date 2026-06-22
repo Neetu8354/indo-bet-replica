@@ -2,7 +2,7 @@ import { openWhatsApp } from "@/lib/wa";
 
 const items = [
   "IND vs AUS · Live",
-  "IPL 2026 · Welcome Bonus 200%",
+  "IPL · Welcome Bonus 200%",
   "Teen Patti Live · 24/7 Tables",
   "Instant UPI Withdrawals",
   "Best Cricket Odds in India",

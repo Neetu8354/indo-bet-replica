@@ -86,7 +86,7 @@ const Contact = () => {
               "Get a new YOLO365 cricket betting ID",
               "UPI deposit not credited",
               "Withdrawal status & timelines",
-              "IPL 2026 odds & market questions",
+              "IPL odds & market questions",
               "Live casino game rules (Teen Patti, Andar Bahar)",
               "KYC and account verification",
               "Bonus & promotion claims",

@@ -37,7 +37,7 @@ export const posts: BlogPost[] = [
     readMinutes: 7,
     category: "Guide",
     cover: heroImg,
-    excerpt: "The fastest way to start betting on IPL 2026 in India — get your YOLO365 ID on WhatsApp in under a minute, with no forms, no KYC delays and zero deposit fees.",
+    excerpt: "The fastest way to start betting on IPL in India — get your YOLO365 ID on WhatsApp in under a minute, with no forms, no KYC delays and zero deposit fees.",
     content: `
 ## Why YOLO365 is India's #1 cricket betting ID provider in 2026
 
@@ -74,7 +74,7 @@ Most new players forget this step. Reply to the WhatsApp chat with the word **"B
 
 ## What you can do with your YOLO365 ID
 
-- Bet on every IPL 2026 match — pre-match and in-play
+- Bet on every IPL match — pre-match and in-play
 - International cricket: T20, ODI, Test, women's cricket
 - Pro Kabaddi, ISL football, tennis Grand Slams, horse racing
 - Live casino: Teen Patti, Andar Bahar, Roulette, Dragon Tiger, Blackjack
@@ -97,16 +97,16 @@ Withdrawals are processed within 5 minutes during peak hours (6pm – 1am IST) a
     ],
   },
   {
-    slug: "ipl-2026-betting-tips-yolo365",
-    title: "IPL 2026 Betting Tips: Sharpest Odds, Live Markets & Strategy on YOLO365",
-    description: "Complete IPL 2026 betting tips — read the toss, weather, pitch reports, in-play markets and bankroll strategy on YOLO365 with the sharpest odds in India.",
-    keywords: "IPL 2026 betting tips, IPL betting strategy, IPL toss prediction, in-play cricket betting, yolo365 IPL",
+    slug: "ipl-betting-tips-yolo365",
+    title: "IPL Betting Tips: Sharpest Odds, Live Markets & Strategy on YOLO365",
+    description: "Complete IPL betting tips — read the toss, weather, pitch reports, in-play markets and bankroll strategy on YOLO365 with the sharpest odds in India.",
+    keywords: "IPL betting tips, IPL betting strategy, IPL toss prediction, in-play cricket betting, yolo365 IPL",
     date: "2026-03-20",
     updated: "2026-04-28",
     readMinutes: 9,
     category: "IPL",
     cover: cricketImg,
-    excerpt: "From toss-based betting and pitch reports to live in-play markets, here's the strategy framework professional Indian punters use on YOLO365 during IPL 2026.",
+    excerpt: "From toss-based betting and pitch reports to live in-play markets, here's the strategy framework professional Indian punters use on YOLO365 during IPL.",
     content: `
 ## The IPL is the most profitable cricket betting market in the world
 
@@ -342,7 +342,7 @@ Send the screenshot to WhatsApp support. 95% of "missing" deposits actually cred
 
 To make withdrawals frictionless, deposit and withdraw using the **same bank account name**. Cross-account transfers trigger a manual verification (usually a 30-minute delay).
 
-For more on IPL match-day strategy see our [IPL betting tips](/blog/ipl-2026-betting-tips-yolo365).
+For more on IPL match-day strategy see our [IPL betting tips](/blog/ipl-betting-tips-yolo365).
 `,
     faqs: [
       { q: "Are there any deposit fees?", a: "No. YOLO365 does not charge any fee on UPI, PhonePe, GPay, Paytm or net banking deposits." },
@@ -408,7 +408,7 @@ After 100 bets you'll know your true win rate and ROI. Most players overestimate
 
 Cash-out lets you lock in profit on pre-match bets that are going well. The smart play is to cash out 50% of a winning bet at +50% of your stake, and let the other 50% ride. This converts variance into a smoother equity curve.
 
-Combine this with the [IPL strategy guide](/blog/ipl-2026-betting-tips-yolo365) for a full framework.
+Combine this with the [IPL strategy guide](/blog/ipl-betting-tips-yolo365) for a full framework.
 `,
     faqs: [
       { q: "How much bankroll do I need to start?", a: "₹5,000 is enough for a beginner using the 2% rule (₹100 per bet). Serious bettors typically start at ₹50,000+." },
