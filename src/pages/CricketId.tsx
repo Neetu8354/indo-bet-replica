@@ -15,9 +15,9 @@ const faqs = [
   { q: "What is the minimum deposit to start cricket betting?", a: "₹100 via UPI — PhonePe, GPay, Paytm, BHIM, or any UPI app. There are no deposit fees and funds reflect in your wallet within 30 seconds." },
   { q: "How fast are withdrawals on YOLO365?", a: "UPI and IMPS withdrawals land in your bank account in under 5 minutes during business hours. Bank transfers above ₹50,000 may take up to 30 minutes due to RBI processing." },
   { q: "Will my cricket ID get banned?", a: "No, as long as you bet from a single account and don't share credentials. We don't ban for winning. Multi-accounting, bonus abuse, or shared IPs are the only triggers — none of which apply to genuine players." },
-  { q: "Can I use my YOLO365 cricket ID for IPL 2026?", a: "Yes. The same ID gives you access to IPL 2026, T20 World Cup, BBL, PSL, every international series, plus live casino, Teen Patti, Aviator and Andar Bahar." },
+  { q: "Can I use my YOLO365 cricket ID for IPL?", a: "Yes. The same ID gives you access to IPL, T20 World Cup, BBL, PSL, every international series, plus live casino, Teen Patti, Aviator and Andar Bahar." },
   { q: "What if my deposit fails?", a: "Failed deposits auto-refund to your UPI within 2 hours. If it doesn't, message us on WhatsApp with the UTR number and we'll trace it within 10 minutes." },
-  { q: "Do I get a welcome bonus on my new cricket ID?", a: "Yes — 100% welcome bonus up to ₹10,000 on your first deposit, plus a ₹500 free bet on IPL 2026 matches. Bonus is credited instantly with no manual claim needed." },
+  { q: "Do I get a welcome bonus on my new cricket ID?", a: "Yes — 100% welcome bonus up to ₹10,000 on your first deposit, plus a ₹500 free bet on IPL matches. Bonus is credited instantly with no manual claim needed." },
   { q: "Is my money safe on YOLO365?", a: "Funds are held in a segregated client account with 256-bit SSL encryption. We've paid out ₹100Cr+ to Indian players in 2025 with zero withdrawal disputes." },
 ];
 
@@ -26,7 +26,7 @@ const steps = [
   { t: "Share your name + mobile number", d: "Our agent replies in under 60 seconds. That's it for basic verification." },
   { t: "Receive your YOLO365 ID", d: "Username, password and login link delivered straight to your chat." },
   { t: "Deposit ₹100+ via UPI", d: "Scan QR or pay to UPI ID. Funds reflect in 30 seconds, zero fees." },
-  { t: "Place your first cricket bet", d: "Pick any IPL 2026, T20 or international match. Bet from ₹10 minimum stake." },
+  { t: "Place your first cricket bet", d: "Pick any IPL, T20 or international match. Bet from ₹10 minimum stake." },
   { t: "Withdraw winnings any time", d: "Request withdrawal on WhatsApp — money in your bank in under 5 minutes." },
 ];
 
@@ -37,7 +37,7 @@ const ld = [
     "@id": `${URL}#webpage`,
     url: URL,
     name: "Create Cricket ID Online — Instant WhatsApp ID | YOLO365",
-    description: "Create your cricket ID online on YOLO365 in 60 seconds via WhatsApp. No documents, instant UPI deposit, 5-minute withdrawal. IPL 2026 ready.",
+    description: "Create your cricket ID online on YOLO365 in 60 seconds via WhatsApp. No documents, instant UPI deposit, 5-minute withdrawal. IPL ready.",
     inLanguage: "en-IN",
     isPartOf: { "@id": `${SITE}/#website` },
   },
@@ -76,9 +76,9 @@ const CricketId = () => (
   <div className="min-h-screen">
     <SEO
       title="Create Cricket ID Online — Instant WhatsApp ID | YOLO365"
-      description="Get your YOLO365 cricket ID in 60 seconds on WhatsApp. No documents, instant UPI deposit, 5-min withdrawal. IPL 2026, T20 World Cup & live casino ready."
+      description="Get your YOLO365 cricket ID in 60 seconds on WhatsApp. No documents, instant UPI deposit, 5-min withdrawal. IPL, T20 World Cup & live casino ready."
       canonical="/cricket-id"
-      keywords="create cricket id online, cricket id whatsapp, online cricket id india, instant cricket betting id, ipl 2026 betting id, cricket id without documents, upi cricket betting id, yolo365 cricket id"
+      keywords="create cricket id online, cricket id whatsapp, online cricket id india, instant cricket betting id, IPL betting id, cricket id without documents, upi cricket betting id, yolo365 cricket id"
       jsonLd={ld}
     />
     <Header />
@@ -93,7 +93,7 @@ const CricketId = () => (
             <span className="text-foreground/80">Cricket ID</span>
           </nav>
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-5 rounded-full border border-gold/30 bg-background/40 backdrop-blur text-[11px] tracking-[0.18em] uppercase text-gold/90">
-            <span className="live-dot" /> 60-second activation · IPL 2026 ready
+            <span className="live-dot" /> 60-second activation · IPL ready
           </div>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight mb-5">
             Create your cricket ID online —{" "}
@@ -151,7 +151,7 @@ const CricketId = () => (
             { i: MessageCircle, t: "60-second WhatsApp ID", d: "No signup form. No email loop. Just message us — get your ID in under a minute, any hour of the day." },
             { i: IndianRupee, t: "₹100 minimum deposit", d: "UPI, PhonePe, GPay, Paytm, BHIM, IMPS, RTGS — every Indian payment method. Zero fees, ever." },
             { i: Zap, t: "5-minute withdrawals", d: "Request to bank account complete in under 5 minutes during business hours. No 'pending verification' tricks." },
-            { i: Trophy, t: "IPL 2026 + every match", d: "Same ID covers IPL 2026, T20 World Cup, BBL, PSL, international series, plus live casino and Aviator." },
+            { i: Trophy, t: "IPL + every match", d: "Same ID covers IPL, T20 World Cup, BBL, PSL, international series, plus live casino and Aviator." },
             { i: ShieldCheck, t: "Licensed & encrypted", d: "Curaçao eGaming license, 256-bit SSL, segregated client funds. ₹100Cr+ paid out in 2025." },
             { i: Smartphone, t: "No app needed", d: "Works on any phone browser. Login link delivered on WhatsApp — bookmark it and you're set." },
           ].map(({ i: Icon, t, d }) => (
@@ -198,7 +198,7 @@ const CricketId = () => (
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {[
-            { t: "Cricket exchange", d: "IPL 2026 match odds, top batsman, session runs, in-play markets every ball. 5–8% sharper than bookmaker prices." },
+            { t: "Cricket exchange", d: "IPL match odds, top batsman, session runs, in-play markets every ball. 5–8% sharper than bookmaker prices." },
             { t: "Live casino", d: "Real dealers from Evolution and Ezugi studios. Roulette, Blackjack, Baccarat, Dragon Tiger streamed in HD." },
             { t: "Teen Patti & Andar Bahar", d: "Live Indian card games at every stake — ₹10 tables to ₹50,000 VIP rooms." },
             { t: "Aviator & crash games", d: "1.00x to 1000x multipliers. Auto-cashout strategy support. Provably fair." },
@@ -269,8 +269,8 @@ const CricketId = () => (
           <Link to="/blog/how-to-get-yolo365-cricket-betting-id-whatsapp" className="p-5 rounded-lg border hairline bg-card/40 hover:border-gold/40 transition-colors">
             <span className="text-sm font-medium">Full WhatsApp cricket ID guide →</span>
           </Link>
-          <Link to="/blog/ipl-2026-betting-tips-yolo365" className="p-5 rounded-lg border hairline bg-card/40 hover:border-gold/40 transition-colors">
-            <span className="text-sm font-medium">IPL 2026 betting tips →</span>
+          <Link to="/blog/ipl-betting-tips-yolo365" className="p-5 rounded-lg border hairline bg-card/40 hover:border-gold/40 transition-colors">
+            <span className="text-sm font-medium">IPL betting tips →</span>
           </Link>
           <Link to="/blog/upi-deposit-betting-india-guide" className="p-5 rounded-lg border hairline bg-card/40 hover:border-gold/40 transition-colors">
             <span className="text-sm font-medium">UPI deposit guide →</span>
@@ -297,7 +297,7 @@ const CricketId = () => (
               Your cricket ID is <span className="italic text-gold">one message away.</span>
             </h2>
             <p className="text-foreground/75 mb-7 max-w-xl mx-auto">
-              Tap below, send 'Hi' on WhatsApp, and you'll be placing your first IPL 2026 bet inside 60 seconds. No forms. No documents. No drama.
+              Tap below, send 'Hi' on WhatsApp, and you'll be placing your first IPL bet inside 60 seconds. No forms. No documents. No drama.
             </p>
             <button onClick={openWhatsApp} className="btn-shimmer inline-flex items-center gap-2 h-14 px-8 rounded-md bg-gold text-primary-foreground font-semibold text-sm hover:opacity-95 transition-opacity btn-glow">
               <MessageCircle className="w-4 h-4" /> Claim my YOLO365 cricket ID

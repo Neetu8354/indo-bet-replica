@@ -7,7 +7,7 @@ const Footer = () => {
   const cols: Record<string, { label: string; href?: string }[]> = {
     "Sports": [
       { label: "Cricket Betting", href: "/games/cricket-betting" },
-      { label: "IPL 2026 Betting", href: "/blog/ipl-2026-betting-tips-yolo365" },
+      { label: "IPL Betting", href: "/blog/ipl-betting-tips-yolo365" },
       { label: "Pro Kabaddi", href: "/blog/kabaddi-betting-yolo365-pro-kabaddi-league" },
       { label: "Tennis" },
       { label: "Horse Racing" },
@@ -25,7 +25,7 @@ const Footer = () => {
       { label: "About Us", href: "/about" },
       { label: "Contact", href: "/contact" },
       { label: "Blog", href: "/blog" },
-      { label: "IPL Betting Tips", href: "/blog/ipl-2026-betting-tips-yolo365" },
+      { label: "IPL Betting Tips", href: "/blog/ipl-betting-tips-yolo365" },
       { label: "Get ID Guide", href: "/blog/how-to-get-yolo365-cricket-betting-id-whatsapp" },
       { label: "UPI Deposit Guide", href: "/blog/upi-deposit-betting-india-guide" },
     ],

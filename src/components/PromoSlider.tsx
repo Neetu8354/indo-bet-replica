@@ -6,7 +6,7 @@ import { openWhatsApp } from "@/lib/wa";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
-  { img: promoIpl, alt: "IPL 2026 cricket betting bonus on yolo365games.live — match-day mega offer", eyebrow: "IPL 2026 · Tonight", title: "Match-day, made richer.", sub: "Stake ₹1,000 on any IPL fixture and we'll triple it — ₹2,000 in instant bonus credits.", cta: "Claim ₹2,000 bonus" },
+  { img: promoIpl, alt: "IPL cricket betting bonus on yolo365games.live — match-day mega offer", eyebrow: "IPL · Tonight", title: "Match-day, made richer.", sub: "Stake ₹1,000 on any IPL fixture and we'll triple it — ₹2,000 in instant bonus credits.", cta: "Claim ₹2,000 bonus" },
   { img: promoWelcome, alt: "200% welcome bonus for new players on yolo365games.live cricket betting site", eyebrow: "New player", title: "Your first ₹15,000 is on us.", sub: "A 200% match on your opening deposit — the warmest welcome in Indian betting.", cta: "Unlock welcome bonus" },
   { img: promoCasino, alt: "VIP live casino tables — Teen Patti, Andar Bahar, Roulette on yolo365games.live", eyebrow: "VIP live casino", title: "An evening at the high-roller table.", sub: "Private Teen Patti, Andar Bahar and Roulette rooms — dealers who know your name.", cta: "Reserve a seat" },
 ];

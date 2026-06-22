@@ -4,7 +4,7 @@ import { MessageCircle, ArrowRight, ShieldCheck, TrendingUp } from "lucide-react
 
 const liveOdds = [
   { match: "IND vs AUS", market: "Match Odds", a: "1.84", b: "2.12" },
-  { match: "MI vs CSK", market: "IPL 2026", a: "1.95", b: "1.90" },
+  { match: "MI vs CSK", market: "IPL", a: "1.95", b: "1.90" },
   { match: "RCB vs KKR", market: "Tonight", a: "2.05", b: "1.80" },
 ];
 
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="relative h-[78vh] min-h-[520px] max-h-[820px]">
         <img
           src={heroImg}
-          alt="Live online cricket betting on yolo365games.live — IPL 2026, T20 and ODI matches"
+          alt="Live online cricket betting on yolo365games.live — IPL, T20 and ODI matches"
           className="absolute inset-0 w-full h-full object-cover scale-105"
           width={1920}
           height={1080}
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="container relative z-10 h-full flex flex-col justify-center max-w-4xl">
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 mb-5 rounded-full border border-gold/30 bg-background/40 backdrop-blur text-[11px] tracking-[0.18em] uppercase text-gold/90">
-              <span className="live-dot" /> IPL 2026 · Live now
+              <span className="live-dot" /> IPL · Live now
             </div>
             <h1 className="font-display text-[44px] sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] mb-5 sm:mb-7 tracking-tight">
               Where India bets,<br className="hidden sm:block" />{" "}
