@@ -1,4 +1,5 @@
 import GamePageTemplate from "./GamePageTemplate";
+import teenpatti from "@/assets/casino-teenpatti.jpg";
 
 const TeenPatti = () => (
   <GamePageTemplate
@@ -9,6 +10,7 @@ const TeenPatti = () => (
     h1="Play Online Teen Patti on YOLO365 – India's Popular Three Card Game"
     intro="Teen Patti is one of India's most loved three-card games, enjoyed by millions of players for its exciting gameplay and strategic decision-making. Whether you are a beginner learning the basics or an experienced player looking for competitive tables, YOLO365 provides a smooth and secure platform to enjoy Teen Patti online. Designed with fast performance, simple navigation, and mobile-friendly gameplay, YOLO365 offers an engaging experience where players can enjoy multiple Teen Patti variations, exciting tables, and uninterrupted gaming sessions."
     imageAlt="Play Online Teen Patti on YOLO365"
+    imageUrl={teenpatti}
     highlights={[
       { title: "Fast and secure platform", desc: "Optimized for smooth gameplay with bank-grade security." },
       { title: "Mobile and desktop compatible", desc: "Play seamlessly on any device with responsive design." },
