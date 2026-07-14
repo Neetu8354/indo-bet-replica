@@ -5,7 +5,7 @@ import SEO from "@/components/SEO";
 import { openWhatsApp } from "@/lib/wa";
 import { CheckCircle2, MessageCircle, ShieldCheck, Zap, Clock, Smartphone, Lock, IndianRupee, Trophy, AlertTriangle } from "lucide-react";
 
-const SITE = "https://yolo365games.live";
+const SITE = "https://www.yolo365games.live";
 const URL = `${SITE}/cricket-id`;
 
 const faqs = [
